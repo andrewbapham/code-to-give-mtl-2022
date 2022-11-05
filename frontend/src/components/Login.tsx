@@ -17,6 +17,9 @@ export const Login: React.FC<LoginProps> = ({}) => {
       <h2>Login</h2>
       <p>Fill the form below to sign in to your account.</p>
       <div className="email-input">
+        <label htmlFor="email" className="label-name underline">
+          <span className="content-name">Email: </span>
+        </label>
         <input
           name="email"
           placeholder="Enter email"
@@ -26,11 +29,11 @@ export const Login: React.FC<LoginProps> = ({}) => {
           required
           autoComplete="true"
         />
-        <label htmlFor="email" className="label-name">
-          <span className="content-name">Email</span>
-        </label>
       </div>
       <div className="password-input">
+        <label htmlFor="password" className="label-name mr-5">
+          <span className="content-name">Password</span>
+        </label>
         <input
           name="password"
           placeholder="Enter password"
@@ -40,9 +43,6 @@ export const Login: React.FC<LoginProps> = ({}) => {
           required
           autoComplete="true"
         />
-        <label htmlFor="password" className="label-name">
-          <span className="content-name">Password</span>
-        </label>
       </div>
     </div>
   );
