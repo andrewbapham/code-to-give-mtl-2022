@@ -2,3 +2,4 @@ backend/venv
 backend/db.sqlite3
 backend/mainapp/__pycache__
 backend/codetogive/__pycache__
+backend/.env
