@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { logInWithEmailAndPassword, auth } from "../utils/Firebase";
 
-interface LoginProps {}
+interface RegisterProps {}
 
-export const Login: React.FC<LoginProps> = ({}) => {
+export const Register: React.FC<RegisterProps> = ({}) => {
   const [input, setInput] = useState({ email: "", password: "" });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
     setInput((prevState) => ({
       ...prevState,
-      [e.target.name]: e.target.value,
+      [e.currentTarget.name]: e.currentTarget.value,
     }));
   };
   return (
